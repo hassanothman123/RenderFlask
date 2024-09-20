@@ -3,10 +3,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Sample product data
-products = [
-    {"id": 1, "name": "Banana", "price": 0.3, "quantity": 150},
-    {"id": 2, "name": "Apple", "price": 0.5, "quantity": 100},
-]
+products = []
 
 @app.route('/products', methods=['GET'])
 def get_products():
