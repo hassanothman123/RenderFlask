@@ -6,7 +6,7 @@ app = Flask(__name__)
 # In-memory cart storage
 carts = {}
 
-PRODUCT_SERVICE_URL = 'http://localhost:5000/products'  # Change to your Product Service URL on deployment
+PRODUCT_SERVICE_URL = 'https://products-f1gy.onrender.com'  # Change to your Product Service URL on deployment
 
 @app.route('/cart/<int:user_id>', methods=['GET'])
 def get_cart(user_id):
